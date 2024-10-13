@@ -1,8 +1,13 @@
 name: Demo workflows
 on: workflow_dispatch
 jobs:
-    print:
-        runs-on: ubunru-latest
-        steps:
-            - name: Print greeting
-              run: echo "Hi, Banzai!"
+  print:
+    runs-on: ubunru-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hi, Banzai!"
+      - name: Print a few lines
+        run: |
+          echo first line
+          echo second line
+          echo thrid line
