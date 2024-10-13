@@ -1,0 +1,8 @@
+name: Demo workflows
+on: workflow_dispatch
+jobs:
+    print:
+        runs-on: ubunru-latest
+        steps:
+            - name: Print greeting
+              run: echo "Hi, Banzai!"
